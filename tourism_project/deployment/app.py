@@ -5,12 +5,8 @@ import pandas as pd
 import joblib
 
 
-# Load the trained tourism model
-model_path = os.path.join(
-    os.path.dirname(__file__),
-    "best_tourism_Package_model_v1.joblib"
-)
-
+# Load the model committed by the pipeline (sits next to this file)
+model_path = os.path.join(os.path.dirname(__file__), "best_tourism_package_model_v1.joblib")
 model = joblib.load(model_path)
 
 
